@@ -3,45 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6427c9aa-abfc-4914-bffa-f9abe1b2d3f1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/mycrud.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/mycrud.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/posts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/verifyToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/verifyToken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/Script1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/css/particleAndLoginStyles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/css/sliceboxCombined.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/images/adult-businessman-concentration-1586996.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/images/adult-celebration-cheerful-1061583.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/images/blond-coworker-fashion-1065705.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/images/blueManSmall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/images/medicalcomputer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/images/nav.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/images/pexels-photo-1289902.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/images/shadow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/images/stickyNotesSmall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/images/teamworkSmall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/js/jquery.slicebox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/js/jquery.slicebox.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/js/modernizr.custom.46884.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App2.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Post.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/validation.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,20 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="26">
+              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="572">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <marker date="1562986995394" expanded="true" signature="430:504" ph="..." />
               </folding>
@@ -128,6 +90,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -157,8 +124,8 @@
         <option value="$PROJECT_DIR$/client/public/scss/main.scss" />
         <option value="$PROJECT_DIR$/client/src/Components/Todo.js" />
         <option value="$PROJECT_DIR$/client/src/Components/Login.js" />
-        <option value="$PROJECT_DIR$/client/src/index.css" />
         <option value="$PROJECT_DIR$/client/public/index.html" />
+        <option value="$PROJECT_DIR$/client/src/index.css" />
       </list>
     </option>
   </component>
@@ -264,12 +231,20 @@
       <workItem from="1561665872730" duration="12009000" />
       <workItem from="1561757570641" duration="14981000" />
       <workItem from="1561830100968" duration="35214000" />
-      <workItem from="1562112972116" duration="80302000" />
+      <workItem from="1562112972116" duration="80746000" />
     </task>
+    <task id="LOCAL-00001" summary="All active and complete here">
+      <created>1562987348069</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562987348069</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142506000" />
+    <option name="totallyTimeSpent" value="142950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -324,6 +299,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="All active and complete here" />
+    <option name="LAST_COMMIT_MESSAGE" value="All active and complete here" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,13 +527,6 @@
     <entry file="file://$PROJECT_DIR$/client/public/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/Components/Login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3250">
@@ -585,11 +557,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="572">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <marker date="1562986995394" expanded="true" signature="430:504" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
         </state>
       </provider>
     </entry>
