@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+mongoose.set('useFindAndModify', false);
 const cors = require('cors');
 require('dotenv/config');
 const app = express();
@@ -11,17 +12,15 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 
-//Any URL with the first param is redirected to the second params folder, then the remaining URL sent in is used to find the final endpoint
-//api/user/register = api/user redirects to Routes/auth then register is used to located the enpoint in that js file
 
-//used to test get requests http://localhost:3002/posts
-app.use('/posts', require('./Routes/posts'));
+//Require directs you to the folder and the URL within use is tacked onto the beginning of the final endpoint
 
-//this route is being used for api/user/login and api/user/register
-app.use('/api/user', require('./Routes/auth'));
+app.use('/todoUser', require('./Routes/auth'));
 
-//making my own CRUD
+//this should be replaced with the above user variant
 app.use('/mycrud', require('./Routes/mycrud'));
+
+//app.use('/todoUser', require('./Routes/todoUserRoutes'));
 
 
 mongoose.connect(process.env.DB_CONNECTION,
@@ -30,9 +29,6 @@ mongoose.connect(process.env.DB_CONNECTION,
         console.log('connected to db')
     }
 );
-
-// const router = express.Router();
-// app.use('/', router);
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));

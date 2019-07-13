@@ -2,6 +2,9 @@ const jwt = require('jsonwebtoken');
 
 
 //add this to routes that need to be protected, it is a middleware function
+//this is done by
+    //const verify = require('./verifyToken'); (from verifyToken.js)
+    //adding verify after the url param
 module.exports = function auth(req, res, next) {
 
     //verify if token exits
@@ -11,7 +14,7 @@ module.exports = function auth(req, res, next) {
     }
 
     //if token exists, ensure validity
-    //use the verified object (id) sent from JWT and assing it to the user
+    //use the verified object (id) sent from JWT and passing it to the user
     try {
         const verified = jwt.verify(token, process.env.TOKEN_SECRET);
         req.user = verified;
