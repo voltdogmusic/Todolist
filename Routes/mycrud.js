@@ -3,7 +3,7 @@ const router = express.Router();
 const Crud = require('../models/Crud');
 
 //currently these are being used to send in to/dos that aren't assoc with any user
-//the schema only has one parameter the "name" parameter and its being used to holy the text value of a to/do
+//the schema only has one parameter the "name" parameter and its being used to hold the text value of a to/do
 //this semi worked, because i could still look up ids but the complete boolean is missing
 
 

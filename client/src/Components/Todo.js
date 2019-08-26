@@ -1,26 +1,20 @@
 import React from 'react';
 
 const ToDo = props => {
-
-
     return (
-
-
         <div>
-            <button onClick={props.onDelete} style={{marginRight: '1%'}}>x</button>
-
-
-            {/*<div onClick={props.toggleComplete}*/}
-            {/*style={{textDecoration: props.todo.complete ? "line-through" : ''}}>*/}
-
-            <input type='text' value={props.value} onChange={e => props.handleTextBox(e,props.key)}/>
-
-
-            {/*</div>*/}
-
+            <button
+                    className = 'btn btn-outline-danger deleteTodoButton'
+                    onClick={props.handleDeleteTodo}
+                    style={{marginRight: '1%'}}>
+                x
+            </button>
+            <input type='text'
+                   value={props.todoText}
+                   onChange={e => props.handleTextBox(e)}/>
         </div>
     );
 };
 
- export default ToDo;
+export default ToDo;
 

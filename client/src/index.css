@@ -1,3 +1,75 @@
-.login {
-        transform: translateY(70%);
+/*see index.html for * and body background color (currently no background color used) */
+* {
+    box-sizing: border-box;
 }
+
+/*TodoForm.js*/
+#addButton {
+    margin-left: 0.2rem;
+    transform: scale(0.8) translateY(-7%);
+}
+
+/*Login.js*/
+.todoLoginSeperator {
+    margin: 10rem;
+}
+
+.registerAndLoginButton {
+    margin: 0.2rem;
+}
+
+.registerButton {
+    margin-right: 0.2rem;
+}
+
+.emailTextbox {
+
+}
+
+/*index.html*/
+.rootParent {
+    text-align: center;
+}
+
+#root {
+    margin-top: 5%;
+}
+
+/* index.html Social media and <a> links in general*/
+.smlinks {
+    margin: 1rem;
+    text-align: center;
+}
+
+.fa {
+    color: #4c4c4c !important;
+    text-decoration: none !important;
+
+}
+
+a {
+    color: #4c4c4c !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #17a2b8 !important;
+}
+
+/*Contact email (not input box)*/
+.email {
+    font-weight: bold;
+}
+
+/* (above) Social media and a links in general*/
+
+/*Todo.js*/
+.deleteTodoButton {
+    transform: scale(0.8) translateY(-10%) translateX(15%);
+}
+
+
+
+
+
+

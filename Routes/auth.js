@@ -32,7 +32,7 @@ router.post('/register', async (req, res) => {
     //checking if email already exists and sending back a message
     const emailExists = await todoUser.findOne({email: req.body.email});
     if (emailExists) {
-        return res.status(400).send('Email already exists');
+        return res.status(400).send({error: 'Email already exists'});
     }
 
     //Hash passwords

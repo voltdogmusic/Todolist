@@ -1,18 +1,8 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import ToDoList, {localURL} from "./ToDoList";
-import axios from "axios/index";
 
-
-const initialState = {
-    email: "",
-    password: "",
-    emailError: "",
-    passwordError: ""
-};
-
-const localURLTodo = 'http://localhost:3002/todoUser/';
-const herokuURLTodo = '';
+export const localURLTodo = 'http://localhost:3002/todoUser/';
+export const herokuURLTodo = 'https://infinite-coast-77819.herokuapp.com/';
 
 
 class Login extends Component {
@@ -27,6 +17,9 @@ class Login extends Component {
     };
 
 
+    // brackets around the key value allow this function to handle multiple events
+    // see Forms in React within OneNote or
+    // https://www.youtube.com/watch?v=doshF5Alr-k&list=PLN3n1USn4xlntqksY83W3997mmQPrUmqM&index=11
     handleChange = event => {
         this.setState({
             [event.target.name]: event.target.value
@@ -41,11 +34,17 @@ class Login extends Component {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({email: this.state.email, password: this.state.password})
+            body: JSON.stringify(
+                {
+                    email: this.state.email,
+                    password: this.state.password
+                })
         };
-        const response = await fetch(`${localURLTodo}register`, config);
-        const json = await response.json();
+        const response = await fetch(`${herokuURLTodo}register`, config);
 
+        console.log('response error');
+
+        const json = await response.json();
 
         if (response.ok) {
 
@@ -54,11 +53,10 @@ class Login extends Component {
             });
         } else {
 
-            console.log('json.error', json.error);
             this.setState({emailError: json.error});
+
+
         }
-
-
     };
 
 
@@ -70,9 +68,14 @@ class Login extends Component {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({email: this.state.email, password: this.state.password})
+            body: JSON.stringify(
+                {
+                    email: this.state.email,
+                    password: this.state.password
+                })
         };
-        const response = await fetch(`${localURLTodo}login`, config);
+
+        const response = await fetch(`${herokuURLTodo}login`, config);
         const json = await response.json();
 
         if (response.ok) {
@@ -90,7 +93,6 @@ class Login extends Component {
 
     validate = () => {
         let emailError = "";
-        // let passwordError = "";
 
         if (!this.state.email.includes("@")) {
             emailError = "invalid email";
@@ -104,26 +106,21 @@ class Login extends Component {
         return true;
     };
 
-    //if the login button was clicked and there is a user id send down the props and trigger a db call
-
-
-    //how to ensure that rendering restarts once a user logs in
-    //have two ToDoList components one that renders normally, but then another one that has the loginProps
-    //loginTodos might not be needed anymore
-
 
     render() {
         return (
             <div>
-                {/*? : isn't needed anymore*/}
-                {this.state.loggedIn ?
-                    <ToDoList userId={this.state.userId} loggedIn={this.state.loggedIn}/>
-                    :
-                    <ToDoList/>}
+                <ToDoList
+                    userId={this.state.userId}
+                    loggedIn={this.state.loggedIn}
+                />
+
+                <div className = 'todoLoginSeperator'></div>
 
                 <div className='login'>
                     <div>
                         <input
+                            className='emailTextbox'
                             name="email"
                             placeholder="email"
                             value={this.state.email}
@@ -145,14 +142,18 @@ class Login extends Component {
                             {this.state.passwordError}
                         </div>
                     </div>
-                    <button onClick={this.submitRegToDB}>Register</button>
-                    <button onClick={this.submitLoginToDB}>Login</button>
+                <div className='registerAndLoginButton'>
+                    <button className="btn btn-outline-info registerButton"
+                            onClick={this.submitRegToDB}>Register</button>
+                    <button
+                        className= 'btn btn-outline-info'
+                        onClick={this.submitLoginToDB}>Login</button>
+                </div>
+
                 </div>
             </div>
         );
     }
 }
-
-Login.propTypes = {};
 
 export default Login;
