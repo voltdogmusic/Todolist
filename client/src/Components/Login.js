@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ToDoList, {localURL} from "./ToDoList";
 
 export const localURLTodo = 'http://localhost:3002/todoUser/';
-export const herokuURLTodo = 'https://infinite-coast-77819.herokuapp.com/';
+export const herokuURLTodo = 'https://infinite-coast-77819.herokuapp.com/todoUser/';
 
 
 class Login extends Component {
@@ -41,8 +41,6 @@ class Login extends Component {
                 })
         };
         const response = await fetch(`${herokuURLTodo}register`, config);
-
-        console.log('response error');
 
         const json = await response.json();
 

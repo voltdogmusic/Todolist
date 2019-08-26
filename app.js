@@ -14,15 +14,12 @@ app.use(express.json());
 
 
 //Require directs you to the folder and the URL within use is tacked onto the beginning of the final endpoint
-
 app.use('/todoUser', require('./Routes/auth'));
 
 //this should be replaced with the above user variant
 app.use('/mycrud', require('./Routes/mycrud'));
 
 //app.use('/todoUser', require('./Routes/todoUserRoutes'));
-
-
 mongoose.connect(process.env.DB_CONNECTION,
     {useNewUrlParser: true},
     () => {
