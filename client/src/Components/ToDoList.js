@@ -6,8 +6,6 @@ import {herokuURLTodo} from "./Login";
 import {localURLTodo} from "./Login";
 
 
-const localURLTodo = localURLTodo;
-
 class ToDoList extends Component {
 
     constructor(props) {
