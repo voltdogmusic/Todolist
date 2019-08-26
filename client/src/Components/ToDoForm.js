@@ -36,7 +36,8 @@ class ToDoForm extends Component {
         };
 
         if(this.props.userId){
-            let response = await axios.post(herokuURLTodo, {
+            
+            let response = await axios.post(`${herokuURLTodo}addToUsersTodos`, {
                 id: this.props.userId,
                 update: {todo: newTodo},
             });

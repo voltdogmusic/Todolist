@@ -17,6 +17,7 @@ app.use(express.json());
 app.use('/todoUser', require('./Routes/auth'));
 
 //this should be replaced with the above user variant
+// i am not using mycrud in this project, or in any of my projects I don't think
 app.use('/mycrud', require('./Routes/mycrud'));
 
 //app.use('/todoUser', require('./Routes/todoUserRoutes'));
