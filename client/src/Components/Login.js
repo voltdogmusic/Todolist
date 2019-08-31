@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ToDoList, {localURL} from "./ToDoList";
 
 //export const localURLTodo = 'http://localhost:3002/todoUser/';
-export const herokuURLTodo = 'https://todolistbytlee.herokuapp.com//todoUser/';
+export const herokuURLTodo = 'https://todolistbytlee.herokuapp.com/todoUser/';
 
 
 class Login extends Component {
