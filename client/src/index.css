@@ -35,10 +35,17 @@
     margin-top: 5%;
 }
 
-/* index.html Social media and <a> links in general*/
+/* index.html - React root + Social media + all <a> links*/
+.rootParent{
+    transform: scale(2) translateY(20%);
+}
+
+
+
 .smlinks {
     margin: 1rem;
     text-align: center;
+    /*transform: scale(2) translateY(400%);*/
 }
 
 .fa {
