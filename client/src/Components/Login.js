@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import ToDoList, {localURL} from "./ToDoList";
 
-export const localURLTodo = 'http://localhost:3002/todoUser/';
-export const herokuURLTodo = 'https://infinite-coast-77819.herokuapp.com/todoUser/';
+//export const localURLTodo = 'http://localhost:3002/todoUser/';
+export const herokuURLTodo = 'https://todolistbytlee.herokuapp.com//todoUser/';
 
 
 class Login extends Component {
