@@ -37,14 +37,18 @@
 
 /* index.html - React root + Social media + all <a> links*/
 .rootParent{
-    transform: scale(2) translateY(20%);
+
 }
 
+@media only screen and (min-width: 1100px) {
+    .rootParent {
+        transform: scale(2) translateY(20%);
+    }
+}
 
 .smlinks {
     margin: 1rem;
     text-align: center;
-    /*transform: scale(2) translateY(400%);*/
 }
 
 .fa {
